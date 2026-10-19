@@ -1,0 +1,14 @@
+Global frequency set at 1000000000000 ticks per second
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.1
+gem5 compiled Oct 18 2026 02:03:36
+gem5 started Oct 18 2026 02:06:43
+gem5 executing on mySurfaceLaptop, pid 569
+command line: /home/dheer/src/gem5/build/ARM/gem5.opt --outdir=/home/dheer/assignment4/results_five_stage/negative_control /home/dheer/assignment4/code/five_stage/five_stage_config.py --workload /home/dheer/assignment4/results_five_stage/negative_expected_state.json --prediction off
+
+info: Standard input is not a terminal, disabling listeners.
+src/cpu/five_stage/five_stage_cpu.cc:396: info: FiveStageCPU: 17 cycles, 13 retired, checks FAIL
+Five-stage result: five stage checks failed; code=1

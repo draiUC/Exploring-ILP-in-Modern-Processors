@@ -1,0 +1,25 @@
+
+---------- Begin Simulation Statistics ----------
+simSeconds                                   0.000000                       # Number of seconds simulated (Second)
+simTicks                                        11000                       # Number of ticks simulated (Tick)
+finalTick                                       11000                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset) (Tick)
+simFreq                                  1000000000000                       # The number of ticks per simulated second ((Tick/Second))
+hostSeconds                                      0.00                       # Real time elapsed on the host (Second)
+hostTickRate                                 22633745                       # The number of ticks simulated per host second (ticks/s) ((Tick/Second))
+hostMemory                                     183432                       # Number of bytes of host memory used (Byte)
+cpu.numCycles                                      11                       # CPU cycles (Cycle)
+cpu.committedInsts                                  4                       # Architectural instructions retired including HALT (Count)
+cpu.branches                                        1                       # Conditional branches resolved in EX (Count)
+cpu.predictions                                     0                       # BHT lookups on tagged target hits; zero when disabled (Count)
+cpu.mispredictions                                  0                       # Predicted next PCs corrected in EX (Count)
+cpu.loadUseStalls                                   1                       # One-cycle load-use interlocks (Count)
+cpu.branchWaitCycles                                3                       # IF slots waiting for an unpredicted branch to resolve (Count)
+cpu.squashedInsts                                   0                       # Younger ID instructions squashed by EX redirect (Count)
+cpu.totalResidenceCycles                           21                       # Sum of IF-start to WB-end latency of retired instructions (Cycle)
+cpu.ipc                                      0.363636                       # Retired instructions/cycle ((Count/Cycle))
+cpu.meanResidenceCycles                      5.250000                       # Mean instruction latency in cycles (Cycle)
+cpu.clk_domain.clock                             1000                       # Clock period in ticks (Tick)
+cpu.clk_domain.voltage_domain.voltage               1                       # Voltage in Volts (Volt)
+cpu.power_state.pwrStateResidencyTicks::UNDEFINED        11000                       # Cumulative time (in ticks) in various power states (Tick)
+
+---------- End Simulation Statistics   ----------

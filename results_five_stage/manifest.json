@@ -1,0 +1,26 @@
+{
+  "cases": 14,
+  "all_checks_passed": true,
+  "negative_control_failed_as_expected": true,
+  "binary_sha256": "d0f21f8528d0a1d6b279f5a113e7dbf259e8527a41946b26654788c7bf76f16a",
+  "source_sha256": {
+    "README.txt": "6dfab663b40d971e07783d141c6a74783a7339abc397e005333beb1bbd6f6093",
+    "run_five_stage.py": "291af97bfd8ec4d3c8673b74d39d9125f0af41a049841f4026aac96f0e896572",
+    "SConscript": "acda24511af92331fe7ffdb2cb747ef785b11eb70fcdb78c942da361ce1f23be",
+    "FiveStageCPU.py": "b6d3e1ec55c7e5a67d9e007ed6805d57ad52e2792ca25a2c2a41a20de7768101",
+    "install_five_stage.py": "f414d0d58debf22f2a4841e91e24a21f73c77a007b219014478bf8678f6c4628",
+    "five_stage_config.py": "321a7cf2fe8253261c7a386f9c958ab9e091b637595355b296ba44861be22dd3",
+    "five_stage_cpu.cc": "ee07ff095f2a1c1fae5ec2780f2bf0b941e199d9e4b5f79c48aef15b9a63b131",
+    "five_stage_cpu.hh": "54e3dc394b230f5ecd7c71e1918961c86ac3738bb046487fd20a183cb5bf908b"
+  },
+  "invariants": [
+    "all architectural state matches a sequential oracle",
+    "same retired PC sequence",
+    "only prediction and output paths differ in paired CPU parameters",
+    "all retired instructions visit IF ID EX MEM WB in order",
+    "prediction-off executes zero BHT lookups and updates",
+    "straight program takes N+4 cycles with latency 5",
+    "load-use test takes 12 cycles with two interlocks",
+    "loop control penalties match branch counts and mispredictions"
+  ]
+}

@@ -1,0 +1,15 @@
+workload,prediction,cycles,committed,ipc,mean_latency,branches,predictions,predictor_updates,mispredictions,squashed,load_use_stalls,branch_wait_cycles,redirect_bubbles,forwarded_operands
+straight,off,17,13,0.76470588235294,5,0,0,0,0,0,0,0,0,0
+straight,on,17,13,0.76470588235294,5,0,0,0,0,0,0,0,0,0
+forwarding,off,12,8,0.66666666666667,5,0,0,0,0,0,0,0,0,8
+forwarding,on,12,8,0.66666666666667,5,0,0,0,0,0,0,0,0,8
+load_use,off,12,6,0.5,5.3333333333333,0,0,0,0,0,2,0,0,4
+load_use,on,12,6,0.5,5.3333333333333,0,0,0,0,0,2,0,0,4
+loop,off,522,390,0.74712643678161,5,64,0,0,0,0,0,128,0,64
+loop,on,398,390,0.97989949748744,5,64,63,64,2,2,0,0,2,64
+alternating,off,553,293,0.52983725135624,5,128,0,0,0,0,0,256,0,129
+alternating,on,365,293,0.8027397260274,5,128,126,128,34,34,0,0,34,129
+wrong_path_store,off,10,4,0.4,5,1,0,0,0,0,0,2,0,1
+wrong_path_store,on,10,4,0.4,5,1,0,1,1,1,0,0,1,1
+wrong_path_halt,off,11,4,0.36363636363636,5.25,1,0,0,0,0,1,3,0,1
+wrong_path_halt,on,11,4,0.36363636363636,5.25,1,0,1,1,1,1,0,1,1
