@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: BSD-3-Clause
+Import('*')
+SimObject('FiveStageCPU.py', sim_objects=['FiveStageCPU'])
+Source('five_stage_cpu.cc')
