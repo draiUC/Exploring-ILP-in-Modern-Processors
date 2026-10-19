@@ -1,0 +1,56 @@
+Global frequency set at 1000000000000 ticks per second
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+src/arch/arm/linux/se_workload.cc:74: warn: Unknown operating system; assuming Linux.
+src/arch/arm/linux/se_workload.cc:74: warn: Unknown operating system; assuming Linux.
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/stats/storage.hh:278: warn: Bucket size (4) does not divide range [1:32] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (4) does not divide range [1:8] into equal-sized buckets. Rounding up.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+src/sim/power_state.cc:105: warn: PowerState: Already in the requested power state, request ignored
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.1
+gem5 compiled Oct 18 2026 01:22:54
+gem5 started Oct 18 2026 01:36:35
+gem5 executing on mySurfaceLaptop, pid 434
+command line: /home/dheer/src/gem5/build/ARM/gem5.opt --outdir=/home/dheer/assignment4/results/smt_pointer_integer_dynamic --debug-flags=O3PipeView --debug-file=trace.out /home/dheer/assignment4/code/ilp_config.py --binary /home/dheer/assignment4/code/pointer --width 4 --model o3 --predictor tournament --smt-policy Dynamic --second /home/dheer/assignment4/code/integer
+
+info: Standard input is not a terminal, disabling listeners.
+gem5.opt: src/cpu/o3/lsq_unit.cc:331: void gem5::o3::LSQUnit::insertLoad(const gem5::o3::DynInstPtr&): Assertion `!loadQueue.full()' failed.
+Program aborted at tick 225000
+--- BEGIN LIBC BACKTRACE ---
+/home/dheer/src/gem5/build/ARM/gem5.opt(_ZN4gem515print_backtraceEv+0x40)[0xb0159663d4a0]
+/home/dheer/src/gem5/build/ARM/gem5.opt(_ZN4gem512abortHandlerEi+0x60)[0xb01596668120]
+linux-vdso.so.1(__kernel_rt_sigreturn+0x0)[0xf479e7540818]
+/lib/aarch64-linux-gnu/libc.so.6(+0x874d8)[0xf479e57074d8]
+/lib/aarch64-linux-gnu/libc.so.6(gsignal+0x1c)[0xf479e56bcb3c]
+/lib/aarch64-linux-gnu/libc.so.6(abort+0xf4)[0xf479e56a7e00]
+/lib/aarch64-linux-gnu/libc.so.6(+0x35cc0)[0xf479e56b5cc0]
+/lib/aarch64-linux-gnu/libc.so.6(__assert_perror_fail+0x0)[0xf479e56b5d30]
+/home/dheer/src/gem5/build/ARM/gem5.opt(_ZN4gem52o37LSQUnit10insertLoadERKNS_14RefCountingPtrINS0_7DynInstEEE+0x70c)[0xb015971604bc]
+/home/dheer/src/gem5/build/ARM/gem5.opt(_ZN4gem52o33IEW13dispatchInstsEs+0x744)[0xb01597131df4]
+/home/dheer/src/gem5/build/ARM/gem5.opt(_ZN4gem52o33IEW8dispatchEs+0xbc)[0xb015971329e0]
+/home/dheer/src/gem5/build/ARM/gem5.opt(_ZN4gem52o33IEW4tickEv+0xc4)[0xb01597134218]
+/home/dheer/src/gem5/build/ARM/gem5.opt(_ZN4gem52o33CPU4tickEv+0x14c)[0xb015970fb74c]
+/home/dheer/src/gem5/build/ARM/gem5.opt(_ZN4gem510EventQueue10serviceOneEv+0xdc)[0xb015966554dc]
+/home/dheer/src/gem5/build/ARM/gem5.opt(_ZN4gem59doSimLoopEPNS_10EventQueueE+0xc8)[0xb015966916f8]
+/home/dheer/src/gem5/build/ARM/gem5.opt(_ZN4gem58simulateEm+0x254)[0xb01596691f24]
+/home/dheer/src/gem5/build/ARM/gem5.opt(+0x157ce6c)[0xb015968cce6c]
+/home/dheer/src/gem5/build/ARM/gem5.opt(+0x115a9d8)[0xb015964aa9d8]
+/lib/aarch64-linux-gnu/libpython3.12.so.1.0(+0x1d6754)[0xf479e6e26754]
+/lib/aarch64-linux-gnu/libpython3.12.so.1.0(_PyObject_Call+0x64)[0xf479e6dd0b74]
+/lib/aarch64-linux-gnu/libpython3.12.so.1.0(_PyEval_EvalFrameDefault+0x7a8)[0xf479e6d6af28]
+/lib/aarch64-linux-gnu/libpython3.12.so.1.0(PyEval_EvalCode+0x23c)[0xf479e6edfd3c]
+/lib/aarch64-linux-gnu/libpython3.12.so.1.0(+0x28bff4)[0xf479e6edbff4]
+/lib/aarch64-linux-gnu/libpython3.12.so.1.0(+0x1d6e00)[0xf479e6e26e00]
+/lib/aarch64-linux-gnu/libpython3.12.so.1.0(PyObject_Vectorcall+0x58)[0xf479e6dcee98]
+/lib/aarch64-linux-gnu/libpython3.12.so.1.0(_PyEval_EvalFrameDefault+0x395c)[0xf479e6d6e0dc]
+/home/dheer/src/gem5/build/ARM/gem5.opt(+0x131d794)[0xb0159666d794]
+/home/dheer/src/gem5/build/ARM/gem5.opt(main+0x1a4)[0xb015963f9d94]
+/lib/aarch64-linux-gnu/libc.so.6(+0x284c4)[0xf479e56a84c4]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98)[0xf479e56a8598]
+/home/dheer/src/gem5/build/ARM/gem5.opt(_start+0x30)[0xb01596498b70]
+--- END LIBC BACKTRACE ---
+For more info on how to address this issue, please visit https://www.gem5.org/documentation/general_docs/common-errors/ 
+

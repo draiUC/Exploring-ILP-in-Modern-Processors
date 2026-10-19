@@ -1,0 +1,17 @@
+{
+  "args": {
+    "binary": "/home/dheer/assignment4/code/integer",
+    "second": "/home/dheer/assignment4/code/integer",
+    "model": "o3",
+    "width": 4,
+    "predictor": "tournament",
+    "smt_policy": "Dynamic"
+  },
+  "events": [
+    {
+      "tick": 28240000,
+      "cause": "exiting with last active thread context",
+      "code": 0
+    }
+  ]
+}

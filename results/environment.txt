@@ -1,0 +1,71 @@
+Linux mySurfaceLaptop 6.18.54.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Tue Oct  6 18:43:37 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.5 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Python 3.12.3
+SCons by Steven Knight et al.:
+	SCons: v4.5.2.120fd4f633e9ef3cafbc0fec35306d7555ffd1db, Tue, 21 Mar 2023 12:11:27 -0400, by bdbaddog on M1DOG2021
+	SCons path: ['/usr/lib/python3/dist-packages/SCons']
+Copyright (c) 2001 - 2023 The SCons Foundation
+f5c5a6e390f55dd5984977815bf9d0bd05da6945
+-rwxr-xr-x 1 dheer dheer 1.1G Oct 18 01:25 /home/dheer/src/gem5/build/ARM/gem5.opt
+{
+  "revision": "f5c5a6e390f55dd5984977815bf9d0bd05da6945",
+  "source_sha256": {
+    "ilp_config.py": "8ff1872322dd73912fd5b3d721910541235de7bb0146b247cac2e7286c926de6",
+    "pointer.S": "88d1c1576fd09ba0846d2575b7631c0a896393190d993d315032405576bdc595",
+    "dependent.S": "845c912bc1380002e1690aec6b2683e0486a7f3c03f456306dedc18d0a55e0bd",
+    "integer.S": "a2b7cbb3c0208f994c0fd21fd1cbc076d4153484f1188eac76d7dab242ba232a",
+    "analyze.py": "d76414640e13015c41aa58ad53d6a8f468799c42ed0143db2976513095a57265",
+    "branch.S": "2dbf28fb460898d6ab976b316fc893e8405d0478605501caccd80c6de95a5d61",
+    "memory.S": "c374aeff1d0e2542bcdbe298ac9ff2c69ea39b9af6c596ea1e5ab067bd31fd86",
+    "run_experiments.py": "a5f3ef1e02d0af493d034605d5d8a249972272b3806b23dce0553440f6b9d8f9",
+    "floating.S": "9cea7c4b4866d4a5f66404ab91291fec9127e2bc1f5d37061aef9a7cda77358d"
+  },
+  "cases": [
+    "integer_w1",
+    "integer_w2",
+    "integer_w4",
+    "dependent_w1",
+    "dependent_w2",
+    "dependent_w4",
+    "floating_w1",
+    "floating_w2",
+    "floating_w4",
+    "memory_w1",
+    "memory_w2",
+    "memory_w4",
+    "branch_w1",
+    "branch_w2",
+    "branch_w4",
+    "pointer_w1",
+    "pointer_w2",
+    "pointer_w4",
+    "branch_local",
+    "branch_timing_no_prediction",
+    "integer_minor",
+    "smt_integer_floating_partitioned",
+    "smt_integer_floating_dynamic",
+    "smt_memory_integer_partitioned",
+    "smt_memory_integer_dynamic",
+    "smt_integer_integer_partitioned",
+    "smt_integer_integer_dynamic",
+    "smt_pointer_integer_partitioned",
+    "smt_pointer_integer_dynamic"
+  ]
+}

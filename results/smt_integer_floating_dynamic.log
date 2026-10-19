@@ -1,0 +1,20 @@
+Global frequency set at 1000000000000 ticks per second
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+src/arch/arm/linux/se_workload.cc:74: warn: Unknown operating system; assuming Linux.
+src/arch/arm/linux/se_workload.cc:74: warn: Unknown operating system; assuming Linux.
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/stats/storage.hh:278: warn: Bucket size (4) does not divide range [1:32] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (4) does not divide range [1:8] into equal-sized buckets. Rounding up.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+src/sim/power_state.cc:105: warn: PowerState: Already in the requested power state, request ignored
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.1
+gem5 compiled Oct 18 2026 01:22:54
+gem5 started Oct 18 2026 01:37:06
+gem5 executing on mySurfaceLaptop, pid 541
+command line: /home/dheer/src/gem5/build/ARM/gem5.opt --outdir=/home/dheer/assignment4/results/smt_integer_floating_dynamic --debug-flags=O3PipeView --debug-file=trace.out /home/dheer/assignment4/code/ilp_config.py --binary /home/dheer/assignment4/code/integer --width 4 --model o3 --predictor tournament --smt-policy Dynamic --second /home/dheer/assignment4/code/floating
+
+info: Standard input is not a terminal, disabling listeners.
+ILP experiment complete: exiting with last active thread context; code=0; tick=21587000
